@@ -25,7 +25,6 @@ public class XaqTest extends CamelSpringTestSupport {
 		mock.expectedFileExists("test.html");
 		template.sendBody("direct:xaq", "Hello wired.com");
 		mock.assertIsSatisfied();
-	
     }
 
 }
